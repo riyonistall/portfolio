@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&family=Space+Mono:ital@0;1&display=swap');
+
+:root {
+  --background: #0D0D0D;
+  --foreground: #F5F0E8;
+  --font-editorial: 'Cormorant Garamond', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  --cream: #F5F0E8;
+  --charcoal: #1A1A1A;
+  --beige: #E8DDD0;
+  --ink-black: #0D0D0D;
+  --muted-gold: #C8A97E;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  background: var(--ink-black);
+  color: var(--cream);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+.sketch-svg path,
+.sketch-svg line,
+.sketch-svg rect,
+.sketch-svg circle,
+.sketch-svg polyline,
+.sketch-svg polygon,
+.sketch-svg ellipse {
+  vector-effect: non-scaling-stroke;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::selection {
+  background: var(--muted-gold);
+  color: var(--ink-black);
+}
+
+.scene {
+  will-change: transform;
+}
+
+.gpu {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

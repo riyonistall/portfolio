@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Screen body -->
+  <path d="M25 15 Q24 14 26 13 L174 13 Q176 12 176 15 L176 110 Q176 112 174 112 L26 112 Q24 112 24 110 Z" />
+  <!-- Screen inner -->
+  <rect x="35" y="22" width="130" height="82" rx="1" />
+  <!-- Screen content lines -->
+  <line x1="45" y1="35" x2="115" y2="35" />
+  <line x1="45" y1="45" x2="105" y2="45" />
+  <line x1="45" y1="55" x2="120" y2="55" />
+  <line x1="45" y1="65" x2="95" y2="65" />
+  <line x1="45" y1="75" x2="110" y2="75" />
+  <line x1="45" y1="85" x2="100" y2="85" />
+  <!-- Keyboard base -->
+  <path d="M10 112 Q8 112 8 115 L8 125 Q8 127 10 128 L190 128 Q192 128 192 125 L192 115 Q192 112 190 112 Z" />
+  <!-- Hinge line -->
+  <line x1="10" y1="112" x2="190" y2="112" />
+  <!-- Touchpad -->
+  <rect x="75" y="116" width="50" height="8" rx="2" />
+  <!-- Keyboard keys hint -->
+  <line x1="25" y1="116" x2="65" y2="116" />
+  <line x1="135" y1="116" x2="175" y2="116" />
+</svg>
